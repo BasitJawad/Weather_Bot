@@ -1,6 +1,7 @@
 name: Weather Bot Workflow
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
