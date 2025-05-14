@@ -24,12 +24,12 @@ jobs:
         
       - name: Install NPM Dependencies
         run: npm install
-        working-directory: ./bot
+        working-directory: ./Bot
 
       - name: Run Weather Bot
         run: node index.js
-        working-directory: ./bot
-        
+        working-directory: ./Bot
+
         env:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
