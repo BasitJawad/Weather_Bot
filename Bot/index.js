@@ -10,8 +10,8 @@ const token = process.env.Telegram_bot_token;
 const bot = new Telegram(token);
 
 // Replace these with actual coordinates
-const lat = '24.677058'; // Example: Riyadh latitude
-const lon = '46.823732'; // Example: Riyadh longitude
+const lat = process.env.lat; // Example: Riyadh latitude
+const lon = process.env.lon; // Example: Riyadh longitude
 const apiKey = process.env.WeatherSecret;
 
 async function getWeather() {
