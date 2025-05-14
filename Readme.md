@@ -1,0 +1,1 @@
+Sends a mesage to phone everyday about Weather.
